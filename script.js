@@ -1,134 +1,254 @@
 const properties = [
 
 {
-    id:1,
-    title:"Premium DTCP Plot",
-    city:"Chennai",
-    primeLocation:"OMR",
-    price:500,
-    displayPrice:"5 Cr",
-    area:"2400 Sqft",
-    image:"images/land1.jpg",
-	Cn:"" ,
-    description:"DTCP approved residential plot near OMR IT Corridor."
+    id: 101,
+    title: "Premium Land Parcel - Devanahalli",
+    city: "Bangalore",
+    primeLocation: "Devanahalli",
+    price: 700,
+    ratePerAcre: "₹7 Cr/Acre",
+    displayPrice: "₹116.38 Cr",
+    area: "16 Acres 20 Guntas",
+    image: "images/property101.jpg",
+    description: "Premium land parcel located in Devanahalli, Bangalore. Rate: ₹7 Cr per Acre. Total Area: 16 Acres 20 Guntas. Total Property Value: ₹116.38 Cr."
 },
-
 {
-    id:2,
-    title:"Luxury Villa Plot",
-    city:"Chennai",
-    primeLocation:"ECR",
-    price:1200,
-    displayPrice:"12 Cr",
-    area:"7200 Sqft",
-    image:"images/land2.jpg",
-    description:"Beach-side villa plot with excellent road access."
+    id: 102,
+    title: "Premium Land Parcel - Devanahalli to Chikkaballapur Main Road",
+    city: "Bangalore",
+    primeLocation: "Devanahalli to Chikkaballapur Main Road",
+    price: 450,
+    ratePerAcre: "₹4.5 Cr/Acre",
+    displayPrice: "₹61.31 Cr",
+    area: "13 Acres 20 Guntas",
+    image: "images/property102.jpg",
+    description: "Prime land parcel with excellent road connectivity. Rate: ₹4.5 Cr per Acre. Total Area: 13 Acres 20 Guntas. Total Property Value: ₹61.31 Cr."
 },
-
 {
-    id:3,
-    title:"Commercial Corner Land",
-    city:"Coimbatore",
-    primeLocation:"RS Puram",
-    price:850,
-    displayPrice:"8.5 Cr",
-    area:"5000 Sqft",
-    image:"images/land3.jpg",
-    description:"Prime commercial property in the heart of RS Puram."
+    id: 103,
+    title: "Premium Land Parcel - Earenahalli",
+    city: "Bangalore",
+    primeLocation: "Earenahalli",
+    price: 950,
+    ratePerAcre: "₹9.5 Cr/Acre",
+    displayPrice: "₹59.38 Cr",
+    area: "6 Acres 10 Guntas",
+    image: "images/property103.jpg",
+    description: "Premium investment land in Earenahalli. Rate: ₹9.5 Cr per Acre. Total Area: 6 Acres 10 Guntas. Total Property Value: ₹59.38 Cr."
 },
-
 {
-    id:4,
-    title:"IT Corridor Investment Land",
-    city:"Coimbatore",
-    primeLocation:"Saravanampatti",
-    price:300,
-    displayPrice:"3 Cr",
-    area:"3600 Sqft",
-    image:"images/land4.jpg",
-    description:"Excellent investment opportunity near IT parks."
+    id: 104,
+    title: "Premium Land Parcel - Uttarahalli",
+    city: "Bangalore",
+    primeLocation: "Uttarahalli",
+    price: 1400,
+    ratePerAcre: "₹14 Cr/Acre",
+    displayPrice: "₹280 Cr",
+    area: "20 Acres",
+    image: "images/property104.jpg",
+    description: "Prime land parcel located in Uttarahalli. Rate: ₹14 Cr per Acre. Total Property Value: ₹280 Cr."
 },
-
 {
-    id:5,
-    title:"Premium Residential Plot",
-    city:"Madurai",
-    primeLocation:"KK Nagar",
-    price:150,
-    displayPrice:"1.5 Cr",
-    area:"2400 Sqft",
-    image:"images/land5.jpg",
-    description:"Ready-to-build residential plot in a premium area."
+    id: 105,
+    title: "Premium Land Parcel - Nandi Hills",
+    city: "Bangalore",
+    primeLocation: "Nandi Hills",
+    price: 1000,
+    ratePerAcre: "₹10 Cr/Acre",
+    displayPrice: "₹110 Cr",
+    area: "11 Acres",
+    image: "images/property105.jpg",
+    description: "Exclusive investment land near Nandi Hills. Rate: ₹10 Cr per Acre. Total Area: 11 Acres. Total Property Value: ₹110 Cr."
 },
-
 {
-    id:6,
-    title:"Main Road Commercial Site",
-    city:"Madurai",
-    primeLocation:"Mattuthavani",
-    price:650,
-    displayPrice:"6.5 Cr",
-    area:"6000 Sqft",
-    image:"images/land6.jpg",
-    description:"Commercial land near bus stand and shopping complexes."
+    id: 106,
+    title: "Premium Land Parcel - Bandaramanahalli",
+    city: "Bangalore",
+    primeLocation: "Bandaramanahalli",
+    price: 1300,
+    ratePerAcre: "₹13 Cr/Acre",
+    displayPrice: "₹156 Cr",
+    area: "12 Acres",
+    image: "images/property106.jpg",
+    description: "Premium land parcel in Bandaramanahalli. Rate: ₹13 Cr per Acre. Total Area: 12 Acres. Total Property Value: ₹156 Cr."
 },
-
 {
-    id:7,
-    title:"Luxury Gated Community Plot",
-    city:"Bangalore",
-    primeLocation:"Whitefield",
-    price:900,
-    displayPrice:"9 Cr",
-    area:"4800 Sqft",
-    image:"images/land7.jpg",
-    description:"Premium plot inside a gated community."
+    id: 107,
+    title: "Premium Land Parcel - Rajghatt",
+    city: "Bangalore",
+    primeLocation: "Rajghatt",
+    price: 800,
+    ratePerAcre: "₹8 Cr/Acre",
+    displayPrice: "₹80 Cr",
+    area: "10 Acres",
+    image: "images/property107.jpg",
+    description: "Well-located investment land in Rajghatt. Rate: ₹8 Cr per Acre. Total Area: 10 Acres. Total Property Value: ₹80 Cr."
 },
-
 {
-    id:8,
-    title:"Tech Park Adjacent Property",
-    city:"Bangalore",
-    primeLocation:"Electronic City",
-    price:2000,
-    displayPrice:"20 Cr",
-    area:"1 Acre",
-    image:"images/land8.jpg",
-    description:"Perfect for commercial development near IT companies."
+    id: 108,
+    title: "Premium Land Parcel - Bettenahalli",
+    city: "Bangalore",
+    primeLocation: "Bettenahalli",
+    price: 700,
+    ratePerAcre: "₹7 Cr/Acre",
+    displayPrice: "₹210 Cr",
+    area: "30 Acres",
+    image: "images/property108.jpg",
+    description: "Large premium land parcel in Bettenahalli. Rate: ₹7 Cr per Acre. Total Area: 30 Acres. Total Property Value: ₹210 Cr."
 },
-
 {
-    id:9,
-    title:"Premium Investment Property",
-    city:"Hyderabad",
-    primeLocation:"Gachibowli",
-    price:2500,
-    displayPrice:"25 Cr",
-    area:"2 Acres",
-    image:"images/land9.jpg",
-    description:"High appreciation land near Financial District."
+    id: 109,
+    title: "Premium Land Parcel - Dibbur",
+    city: "Bangalore",
+    primeLocation: "Dibbur",
+    price: 800,
+    ratePerAcre: "₹8 Cr/Acre",
+    displayPrice: "₹200 Cr",
+    area: "25 Acres",
+    image: "images/property109.jpg",
+    description: "Premium investment land in Dibbur. Rate: ₹8 Cr per Acre. Total Area: 25 Acres. Total Property Value: ₹200 Cr."
 },
-
 {
-    id:10,
-    title:"Luxury Commercial Plot",
-    city:"Hyderabad",
-    primeLocation:"Hitech City",
-    price:3500,
-    displayPrice:"35 Cr",
-    area:"3 Acres",
-    image:"images/land10.jpg",
-    description:"Premium commercial property suitable for offices and malls."
+    id: 110,
+    title: "DTCP Approved Land - Mattuthavani",
+    city: "Madurai",
+    primeLocation: "Mattuthavani",
+    price: 75,
+    ratePerAcre: "₹15 Lakh/Cent",
+    displayPrice: "₹75 Lakh",
+    area: "5 Cents",
+    image: "images/property110.jpg",
+    description: "DTCP approved land in Mattuthavani, Madurai. Total Area: 5 Cents. Rate: ₹15 Lakh per Cent. Total Property Value: ₹75 Lakh."
+},
+{
+    id: 111,
+    title: "DTCP Approved Land - Kalligudi",
+    city: "Madurai",
+    primeLocation: "Kalligudi",
+    price: 110,
+    ratePerAcre: "₹1100/Sq.ft",
+    displayPrice: "₹1100/Sq.ft",
+    area: "As Available",
+    image: "images/property111.jpg",
+    description: "DTCP approved land in Kalligudi, Madurai. Rate: ₹1100 per Sq.ft."
+},
+{
+    id: 112,
+    title: "DTCP Approved Land - Sivagangai",
+    city: "Madurai",
+    primeLocation: "Sivagangai",
+    price: 150,
+    ratePerAcre: "₹1500/Sq.ft",
+    displayPrice: "₹1500/Sq.ft",
+    area: "As Available",
+    image: "images/property112.jpg",
+    description: "DTCP approved land in Sivagangai, Madurai. Rate: ₹1500 per Sq.ft."
+},
+{
+    id: 113,
+    title: "Premium Land Parcel - Villankurichi",
+    city: "Coimbatore",
+    primeLocation: "Villankurichi",
+    price: 1900,
+    ratePerAcre: "Total Value",
+    displayPrice: "₹19 Cr",
+    area: "2 Acres 87 Cents",
+    image: "images/property113.jpg",
+    description: "Prime land parcel in Villankurichi, Coimbatore. Total Area: 2 Acres 87 Cents. Total Property Value: ₹19 Cr."
+},
+{
+    id: 114,
+    title: "Commercial Land - Sriperumbudur",
+    city: "Chennai",
+    primeLocation: "Sriperumbudur",
+    price: 400,
+    ratePerAcre: "₹4 Cr/Acre",
+    displayPrice: "₹336 Cr",
+    area: "84 Acres",
+    image: "images/property114.jpg",
+    description: "Prime on-road property in Sriperumbudur, Chennai. Total Area: 84 Acres. Frontage: 250 Ft. Rate: ₹4 Cr per Acre. Total Property Value: ₹336 Cr."
+},
+{
+    id: 115,
+    title: "Premium Land Parcel - Kuthambakkam",
+    city: "Chennai",
+    primeLocation: "Kuthambakkam",
+    price: 800,
+    ratePerAcre: "₹8 Cr/Acre",
+    displayPrice: "₹160 Cr",
+    area: "20 Acres",
+    image: "images/property115.jpg",
+    description: "Premium land parcel in Kuthambakkam, Chennai. Near upcoming Metro. Total Area: 20 Acres. Rate: ₹8 Cr per Acre. Total Property Value: ₹160 Cr."
+},
+{
+    id: 116,
+    title: "Highway Land - Kanchipuram to Arakonam Road",
+    city: "Kanchipuram",
+    primeLocation: "Kanchipuram to Arakonam Road",
+    price: 300,
+    ratePerAcre: "₹3 Cr/Acre",
+    displayPrice: "₹219 Cr",
+    area: "73 Acres",
+    image: "images/property116.jpg",
+    description: "Prime on-road property on Kanchipuram to Arakonam Road. Close to Parandur Airport. Total Area: 73 Acres. Rate: ₹3 Cr per Acre. Total Property Value: ₹219 Cr."
+},
+{
+    id: 117,
+    title: "Premium Land Parcel - Pillai Chattiram",
+    city: "Chennai",
+    primeLocation: "Pillai Chattiram",
+    price: 400,
+    ratePerAcre: "₹4 Cr/Acre",
+    displayPrice: "₹400 Cr",
+    area: "100 Acres",
+    image: "images/property117.jpg",
+    description: "Premium land parcel in Pillai Chattiram. Total Area: 100 Acres. Frontage: 400 Ft. Rate: ₹4 Cr per Acre. Total Property Value: ₹400 Cr."
+},
+{
+    id: 118,
+    title: "Airport Corridor Land - Madurai Airport",
+    city: "Madurai",
+    primeLocation: "Madurai Airport",
+    price: 1000,
+    ratePerAcre: "₹10 Cr/Acre",
+    displayPrice: "₹45 Cr",
+    area: "4.5 Acres",
+    image: "images/property118.jpg",
+    description: "Main road property near Madurai Airport. Total Area: 4.5 Acres. Frontage: 130 Ft. Rate: ₹10 Cr per Acre. Total Property Value: ₹45 Cr."
+},
+{
+    id: 119,
+    title: "Airport Corridor Land - Madurai Airport",
+    city: "Madurai",
+    primeLocation: "Madurai Airport",
+    price: 1000,
+    ratePerAcre: "₹10 Cr/Acre",
+    displayPrice: "₹70 Cr",
+    area: "7 Acres",
+    image: "images/property119.jpg",
+    description: "Main road property near Madurai Airport. Total Area: 7 Acres. Frontage: 300 Ft. Rate: ₹10 Cr per Acre. Total Property Value: ₹70 Cr."
+},
+{
+    id: 120,
+    title: "Airport Corridor Land - Madurai Airport",
+    city: "Madurai",
+    primeLocation: "Madurai Airport",
+    price: 900,
+    ratePerAcre: "₹9 Cr/Acre",
+    displayPrice: "₹135 Cr",
+    area: "15 Acres",
+    image: "images/property120.jpg",
+    description: "Main road property near Madurai Airport. Total Area: 15 Acres. Rate: ₹9 Cr per Acre. Total Property Value: ₹135 Cr."
 }
 
 ];
-
 localStorage.setItem(
 "properties",
 JSON.stringify(properties)
 );
 
 displayProperties(properties);
+
 
 function displayProperties(list){
 
@@ -146,18 +266,23 @@ container.innerHTML += `
 <span class="featured">
 Featured
 </span>
+<br>
 
-<img src="${p.image}" alt="${p.title}">
+
 
 <div class="card-content">
 
 <h3>${p.title}</h3>
+
 <h5>ID: ${p.id}</h5>
-<p>📍${p.primeLocation}, ${p.city}</p>
 
-<p>💰 ₹${p.displayPrice}</p>
+<p>📍 ${p.primeLocation}, ${p.city}</p>
 
-<p>📏 ${p.area}</p>
+<p>💰 Total Value: ${p.displayPrice}</p>
+
+<p>🏷️ Rate: ${p.ratePerAcre}</p>
+
+<p>📏Area: ${p.area}</p>
 
 <button onclick="viewProperty(${p.id})">
 View Details
@@ -173,44 +298,30 @@ View Details
 
 }
 
-const primeLocations = {
 
-    Chennai: [
-        "Anna Nagar",
-        "ECR",
-        "OMR",
-        "Porur",
-        "Siruseri",
-        "Velachery"
-    ],
+function loadCityDropdown() {
 
-    Coimbatore: [
-        "Peelamedu",
-        "RS Puram",
-        "Saravanampatti",
-        "Vadavalli"
-    ],
+const cityDropdown =
+document.getElementById("cityFilter");
 
-    Madurai: [
-        "KK Nagar",
-        "Mattuthavani",
-        "Otthakadai",
-        "Thirunagar"
-    ],
+cityDropdown.innerHTML =
+'<option value="">All Cities</option>';
 
-    Bangalore: [
-        "Electronic City",
-        "Koramangala",
-        "Sarjapur Road",
-        "Whitefield"
-    ],
+const cities =
+[...new Set(properties.map(p => p.city))];
 
-    Hyderabad: [
-        "Gachibowli",
-        "Hitech City",
-        "Kokapet"
-    ]
-};
+cities.sort();
+
+cities.forEach(city => {
+
+cityDropdown.innerHTML +=
+`<option value="${city}">
+${city}
+</option>`;
+
+});
+
+}
 
 function updatePrimeLocations() {
 
@@ -223,18 +334,42 @@ function updatePrimeLocations() {
     primeDropdown.innerHTML =
         '<option value="">All Prime Locations</option>';
 
-    if (city && primeLocations[city]) {
+    let locations = [];
 
-        primeLocations[city].forEach(location => {
+    if (city) {
 
-            primeDropdown.innerHTML +=
-                `<option value="${location}">
-                    ${location}
-                </option>`;
+        locations = [
+            ...new Set(
+                properties
+                    .filter(p => p.city === city)
+                    .map(p => p.primeLocation)
+            )
+        ];
 
-        });
+    } else {
+
+        locations = [
+            ...new Set(
+                properties.map(
+                    p => p.primeLocation
+                )
+            )
+        ];
 
     }
+
+    locations.sort();
+
+    locations.forEach(location => {
+
+        primeDropdown.innerHTML += `
+            <option value="${location}">
+                ${location}
+            </option>
+        `;
+
+    });
+
 }
 function viewProperty(id){
 
@@ -294,24 +429,28 @@ function filterProperties() {
     displayProperties(filtered);
 }
 
-function searchProperty(){
+function searchProperty() {
 
-const search =
-document.getElementById("searchInput")
-.value.toLowerCase();
+    const search =
+        document.getElementById("searchInput")
+        .value
+        .toLowerCase();
 
-const filtered =
-properties.filter(p =>
-(
-    p.city.toLowerCase().includes(search) ||
-    p.primeLocation.toLowerCase().includes(search)
-)
-.includes(search)
-);
+    const filtered =
+        properties.filter(p =>
 
-displayProperties(filtered);
+            p.city.toLowerCase().includes(search) ||
+
+            p.primeLocation.toLowerCase().includes(search) ||
+
+            p.title.toLowerCase().includes(search)
+
+        );
+
+    displayProperties(filtered);
 
 }
+
 function loadLocations() {
 
     const datalist =
@@ -319,71 +458,29 @@ function loadLocations() {
 
     datalist.innerHTML = "";
 
-    Object.keys(primeLocations).forEach(city => {
+    const locations = [
+        ...new Set(
+            properties.flatMap(p => [
+                p.city,
+                p.primeLocation
+            ])
+        )
+    ];
+
+    locations.sort();
+
+    locations.forEach(location => {
 
         datalist.innerHTML += `
-            <option value="${city}">
+            <option value="${location}">
         `;
 
-        primeLocations[city].forEach(location => {
-
-            datalist.innerHTML += `
-                <option value="${location}">
-            `;
-
-        });
-
     });
 
 }
+``
 
+loadCityDropdown();
+updatePrimeLocations();
 loadLocations();
-function searchProperty() {
-
-    const search =
-        document.getElementById("searchInput")
-        .value
-        .trim();
-
-    let selectedCity = "";
-    let selectedPrimeLocation = "";
-
-    // Check City
-    Object.keys(primeLocations).forEach(city => {
-
-        if (
-            city.toLowerCase() ===
-            search.toLowerCase()
-        ) {
-
-            selectedCity = city;
-
-        }
-
-        primeLocations[city].forEach(location => {
-
-            if (
-                location.toLowerCase() ===
-                search.toLowerCase()
-            ) {
-
-                selectedCity = city;
-                selectedPrimeLocation = location;
-
-            }
-
-        });
-
-    });
-
-    document.getElementById("cityFilter").value =
-        selectedCity;
-
-    updatePrimeLocations();
-
-    document.getElementById(
-        "primeLocationFilter"
-    ).value = selectedPrimeLocation;
-
-    filterProperties();
-}
+displayProperties(properties);
