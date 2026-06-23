@@ -327,3 +327,183 @@ margin-top:30px;
     background:#eef5ff;
     border-left:5px solid #003566;
 }
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+   ========================= */
+
+@media screen and (max-width: 768px){
+
+    .hero{
+        height:80vh;
+    }
+
+    .hero-logo img{
+        width:140px;
+    }
+
+    .hero-logo h6{
+        font-size:12px;
+        color:white;
+        font-style:italic;
+    }
+
+    .overlay{
+        padding:100px 20px 20px;
+        text-align:center;
+    }
+
+    .overlay h1{
+        font-size:32px;
+        line-height:1.2;
+    }
+
+    .overlay p{
+        font-size:16px;
+    }
+
+    .search-box{
+        flex-direction:column;
+        width:100%;
+        align-items:center;
+    }
+
+    .search-box input{
+        width:100%;
+        max-width:350px;
+    }
+
+    .search-box button{
+        width:100%;
+        max-width:350px;
+    }
+
+    .filters{
+        flex-direction:column;
+        padding:20px;
+        gap:10px;
+    }
+
+    .filters select,
+    .filters button{
+        width:100%;
+    }
+
+    .section-title{
+        font-size:28px;
+    }
+
+    .property-container{
+        grid-template-columns:1fr;
+        padding:15px;
+    }
+
+    .card img{
+        height:220px;
+    }
+
+    .card-content{
+        padding:15px;
+    }
+
+    .card-content h3{
+        font-size:20px;
+    }
+
+    .card-content h5{
+        font-size:14px;
+    }
+
+    .card-content p{
+        font-size:14px;
+    }
+
+    .card-content button{
+        width:100%;
+    }
+
+    .detail-page{
+        padding:15px;
+    }
+
+    .detail-image{
+        height:250px;
+    }
+
+    .detail-content{
+        padding:15px;
+    }
+
+    .detail-content h1{
+        font-size:28px;
+    }
+
+    .property-info{
+        grid-template-columns:1fr;
+    }
+
+    .info-box{
+        padding:15px;
+    }
+
+    .info-box p{
+        font-size:16px;
+    }
+
+    .description{
+        font-size:15px;
+    }
+
+    .button-group{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .button-group button{
+        width:100%;
+        margin-right:0;
+    }
+
+    footer{
+        padding:20px;
+    }
+
+}
+
+/* Extra Small Mobiles */
+
+@media screen and (max-width:480px){
+
+    .hero-logo img{
+        width:120px;
+    }
+.hero-logo h6{
+    color:white;
+    font-style:italic;
+    font-size:14px;
+    margin-top:5px;
+    text-align:center;
+    font-weight:normal;
+}
+    .overlay h1{
+        font-size:26px;
+    }
+
+    .overlay p{
+        font-size:14px;
+    }
+
+    .search-box input,
+    .search-box button{
+        max-width:100%;
+    }
+
+    .section-title{
+        font-size:24px;
+    }
+
+    .detail-content h1{
+        font-size:24px;
+    }
+
+}
