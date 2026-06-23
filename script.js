@@ -7,6 +7,7 @@ const properties = [
     primeLocation: "Devanahalli",
     price: 700,
     ratePerAcre: "₹7 Cr/Acre",
+    totalPrice: 116.38,
     displayPrice: "₹116.38 Cr",
     area: "16 Acres 20 Guntas",
     image: "images/property101.jpg",
@@ -19,6 +20,7 @@ const properties = [
     primeLocation: "Devanahalli to Chikkaballapur Main Road",
     price: 450,
     ratePerAcre: "₹4.5 Cr/Acre",
+    totalPrice: 61.31,
     displayPrice: "₹61.31 Cr",
     area: "13 Acres 20 Guntas",
     image: "images/property102.jpg",
@@ -31,6 +33,7 @@ const properties = [
     primeLocation: "Earenahalli",
     price: 950,
     ratePerAcre: "₹9.5 Cr/Acre",
+    totalPrice: 59.38,
     displayPrice: "₹59.38 Cr",
     area: "6 Acres 10 Guntas",
     image: "images/property103.jpg",
@@ -43,6 +46,7 @@ const properties = [
     primeLocation: "Uttarahalli",
     price: 1400,
     ratePerAcre: "₹14 Cr/Acre",
+    totalPrice: 280,
     displayPrice: "₹280 Cr",
     area: "20 Acres",
     image: "images/property104.jpg",
@@ -55,6 +59,7 @@ const properties = [
     primeLocation: "Nandi Hills",
     price: 1000,
     ratePerAcre: "₹10 Cr/Acre",
+    totalPrice: 110,
     displayPrice: "₹110 Cr",
     area: "11 Acres",
     image: "images/property105.jpg",
@@ -67,6 +72,7 @@ const properties = [
     primeLocation: "Bandaramanahalli",
     price: 1300,
     ratePerAcre: "₹13 Cr/Acre",
+    totalPrice: 156,
     displayPrice: "₹156 Cr",
     area: "12 Acres",
     image: "images/property106.jpg",
@@ -79,6 +85,7 @@ const properties = [
     primeLocation: "Rajghatt",
     price: 800,
     ratePerAcre: "₹8 Cr/Acre",
+    totalPrice: 80,
     displayPrice: "₹80 Cr",
     area: "10 Acres",
     image: "images/property107.jpg",
@@ -91,6 +98,7 @@ const properties = [
     primeLocation: "Bettenahalli",
     price: 700,
     ratePerAcre: "₹7 Cr/Acre",
+    totalPrice: 210,
     displayPrice: "₹210 Cr",
     area: "30 Acres",
     image: "images/property108.jpg",
@@ -103,6 +111,7 @@ const properties = [
     primeLocation: "Dibbur",
     price: 800,
     ratePerAcre: "₹8 Cr/Acre",
+    totalPrice: 200,
     displayPrice: "₹200 Cr",
     area: "25 Acres",
     image: "images/property109.jpg",
@@ -115,6 +124,7 @@ const properties = [
     primeLocation: "Mattuthavani",
     price: 75,
     ratePerAcre: "₹15 Lakh/Cent",
+    totalPrice: 0.75,
     displayPrice: "₹75 Lakh",
     area: "5 Cents",
     image: "images/property110.jpg",
@@ -127,6 +137,7 @@ const properties = [
     primeLocation: "Kalligudi",
     price: 110,
     ratePerAcre: "₹1100/Sq.ft",
+    totalPrice: 0,
     displayPrice: "₹1100/Sq.ft",
     area: "As Available",
     image: "images/property111.jpg",
@@ -139,6 +150,7 @@ const properties = [
     primeLocation: "Sivagangai",
     price: 150,
     ratePerAcre: "₹1500/Sq.ft",
+    totalPrice: 0,
     displayPrice: "₹1500/Sq.ft",
     area: "As Available",
     image: "images/property112.jpg",
@@ -151,6 +163,7 @@ const properties = [
     primeLocation: "Villankurichi",
     price: 1900,
     ratePerAcre: "Total Value",
+    totalPrice: 19,
     displayPrice: "₹19 Cr",
     area: "2 Acres 87 Cents",
     image: "images/property113.jpg",
@@ -163,6 +176,7 @@ const properties = [
     primeLocation: "Sriperumbudur",
     price: 400,
     ratePerAcre: "₹4 Cr/Acre",
+    totalPrice: 336,
     displayPrice: "₹336 Cr",
     area: "84 Acres",
     image: "images/property114.jpg",
@@ -175,6 +189,7 @@ const properties = [
     primeLocation: "Kuthambakkam",
     price: 800,
     ratePerAcre: "₹8 Cr/Acre",
+    totalPrice: 160,
     displayPrice: "₹160 Cr",
     area: "20 Acres",
     image: "images/property115.jpg",
@@ -187,6 +202,7 @@ const properties = [
     primeLocation: "Kanchipuram to Arakonam Road",
     price: 300,
     ratePerAcre: "₹3 Cr/Acre",
+    totalPrice: 219,
     displayPrice: "₹219 Cr",
     area: "73 Acres",
     image: "images/property116.jpg",
@@ -199,6 +215,7 @@ const properties = [
     primeLocation: "Pillai Chattiram",
     price: 400,
     ratePerAcre: "₹4 Cr/Acre",
+    totalPrice: 400,
     displayPrice: "₹400 Cr",
     area: "100 Acres",
     image: "images/property117.jpg",
@@ -211,6 +228,7 @@ const properties = [
     primeLocation: "Madurai Airport",
     price: 1000,
     ratePerAcre: "₹10 Cr/Acre",
+    totalPrice: 45,
     displayPrice: "₹45 Cr",
     area: "4.5 Acres",
     image: "images/property118.jpg",
@@ -223,6 +241,7 @@ const properties = [
     primeLocation: "Madurai Airport",
     price: 1000,
     ratePerAcre: "₹10 Cr/Acre",
+    totalPrice: 70,
     displayPrice: "₹70 Cr",
     area: "7 Acres",
     image: "images/property119.jpg",
@@ -235,6 +254,7 @@ const properties = [
     primeLocation: "Madurai Airport",
     price: 900,
     ratePerAcre: "₹9 Cr/Acre",
+    totalPrice: 135,
     displayPrice: "₹135 Cr",
     area: "15 Acres",
     image: "images/property120.jpg",
@@ -409,22 +429,24 @@ function filterProperties() {
     }
 
     // Price Filter
-    if (price) {
+  // Price Filter
+if (price) {
 
-        if (price === "2000+") {
+    if (price === "200+") {
 
-            filtered = filtered.filter(
-                p => p.price > 2000
-            );
+        filtered = filtered.filter(
+            p => p.totalPrice > 200
+        );
 
-        } else {
+    } else {
 
-            filtered = filtered.filter(
-                p => p.price <= Number(price)
-            );
+        filtered = filtered.filter(
+            p => p.totalPrice <= Number(price)
+        );
 
-        }
     }
+
+}
 
     displayProperties(filtered);
 }
