@@ -6,7 +6,25 @@
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
+<div class="menu-container">
 
+    <button class="menu-btn" onclick="toggleDropdown()">
+        ☰
+    </button>
+
+    <div id="dropdownMenu" class="dropdown-menu">
+
+        <a href="index.html">
+            🏠 Home
+        </a>
+
+        <a href="#requirement-section">
+            📝 Enquiry
+        </a>
+
+    </div>
+
+</div>
 <header class="hero">
 
     <div class="hero-logo">
@@ -42,9 +60,14 @@
 
 <section class="filters">
 
-  <select id="cityFilter"
-        onchange="updatePrimeLocations(); filterProperties();">
+<select id="stateFilter"
+        onchange="updateCities(); updatePrimeLocations(); filterProperties()">
 </select>
+
+<select id="cityFilter"
+        onchange="updatePrimeLocations(); filterProperties()">
+</select>
+
 
 <select id="primeLocationFilter"
         onchange="filterProperties()">
@@ -81,6 +104,47 @@
     <div id="properties" class="property-container">
 
     </div>
+
+</section>
+<section>
+
+    
+
+    <div id="properties" class="property-container"></div>
+
+</section>
+
+
+<section id="requirement-section" class="requirement-section">
+
+    <h2>📝 Post Your Requirement</h2>
+
+    <input type="text"
+           id="reqName"
+           placeholder="Your Name">
+
+    <input type="tel"
+           id="reqPhone"
+           placeholder="Mobile Number">
+
+    <select id="reqState">
+        <option value="">Select State</option>
+        <option>Karnataka</option>
+        <option>Tamil Nadu</option>
+        <option>Andhra Pradesh</option>
+        <option>Kerala</option>
+    </select>
+
+    <input type="text"
+           id="reqCity"
+           placeholder="Preferred City">
+
+    <textarea id="reqDescription"
+              placeholder="Describe Your Requirement"></textarea>
+
+    <button onclick="submitRequirement()">
+        Submit Requirement
+    </button>
 
 </section>
 
