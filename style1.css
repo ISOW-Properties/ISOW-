@@ -741,3 +741,33 @@ margin-top:30px;
     }
 }
 ``
+
+.card-content button,
+.filters button,
+.requirement-section button,
+.contact-btn{
+margin-top:10px;
+padding:12px 20px;
+border:none;
+background:#003566;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+.card-content button:hover,
+.filters button:hover,
+.requirement-section button:hover,
+.contact-btn:hover{
+
+    transform:
+        translateY(-4px)
+        scale(1.03);
+
+    background:linear-gradient(
+       #24527a
+    );
+
+    box-shadow:
+        0 10px 10px #f2f2f2 ;
+}
