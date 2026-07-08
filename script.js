@@ -966,8 +966,8 @@ function filterProperties() {
 
 function searchProperty() {
 
-    const search =
-        document.getElementById("searchInput")
+    const search = document
+        .getElementById("searchInput")
         .value
         .toLowerCase()
         .trim();
@@ -982,6 +982,12 @@ function searchProperty() {
 
         p.title.toLowerCase().includes(search) ||
 
+        p.description.toLowerCase().includes(search) ||
+
+        p.ratePerAcre.toLowerCase().includes(search) ||
+
+        p.area.toLowerCase().includes(search) ||
+
         p.id.toString().includes(search)
 
     );
@@ -989,7 +995,6 @@ function searchProperty() {
     displayProperties(filtered);
 
 }
-
 function loadLocations() {
 
     const datalist =
