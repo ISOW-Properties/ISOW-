@@ -1002,29 +1002,34 @@ function loadLocations() {
 
     datalist.innerHTML = "";
 
-    const locations = [
-        ...new Set(
-            properties.flatMap(p => [
-                p.state,
-                p.city,
-                p.primeLocation,
-                p.id.toString()
-            ])
-        )
-    ];
+    const values = new Set();
 
-    locations.sort();
+    properties.forEach(p => {
 
-    locations.forEach(location => {
+        values.add(p.state);
+        values.add(p.city);
+        values.add(p.primeLocation);
+        values.add(p.id.toString());
 
-        datalist.innerHTML += `
-            <option value="${location}">
-        `;
+        p.title.split(" ")
+            .forEach(word => {
+                if(word.length > 3)
+                    values.add(word);
+            });
 
     });
 
-}
+    [...values]
+        .sort()
+        .forEach(item => {
 
+            datalist.innerHTML += `
+                <option value="${item}">
+            `;
+
+        });
+
+}
 function loadStateDropdown() {
 
     const stateDropdown =
