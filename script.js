@@ -830,7 +830,7 @@ const properties = [
     code :.+91 63637 41877
     image: "images/property164.jpg",
     description: "Large-scale agriculture zone land on Mumbai National Highway NH65, Kamkole Village, Munpalle Mandal, Sangareddy District, Telangana. Total extent 1450 Acres, expandable up to around 3000 Acres. 73 pattadars and one agreement holder, outright sale only. Clear title, fencing done, 100% meeting arrangement. Road frontage of 500+ meters on NH65, near Zaheerabad Toll Plaza and Food Pyramid Restaurant, Kamkole. Rate: ₹1 Cr 60 Lakh per Acre on average, negotiable."
-}
+},
 {
     id: 165,
     state: "Tamil Nadu",
