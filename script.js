@@ -922,7 +922,7 @@ const properties = [
     code: "Vaishnavi Chennai",
     image: "images/property169.jpg",
     description: "Prime commercial land in Sepencheri, on the way to Padappai, directly opposite Tata Motors and near Krishna College. Total extent 20,000 Sq.ft with 200 Ft frontage on a 100 Ft road, plus a second 30 Ft road access. 5 minutes to Oragadam Industrial Corridor. Rate: ₹5,600 per Sq.ft, negotiable."
-}
+},
 {
     id: 182,
     state: "Karnataka",
@@ -1342,7 +1342,7 @@ function toggleDropdown() {
 function submitRequirement() {
 
     const name =
-        document.getElementById("reqName").value.trim();        document.getElementById("reqName").value.trim();
+        document.getElementById("reqName").value.trim();    
 
     const state =
         document.getElementById("reqState").value;
@@ -1405,3 +1405,4 @@ updateCities();
 updatePrimeLocations();
 loadLocations();
 displayProperties(properties);
+reqName
