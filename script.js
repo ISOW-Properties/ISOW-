@@ -1027,6 +1027,66 @@ const properties = [
     code: "Vaishnavi Chennai",
     image: "images/property168.jpg",
     description: "Strategic 22-acre land parcel in Padappai, Chennai, suited for plotted layouts, gated communities, or industrial warehousing. 40 Ft leading road access meeting CMDA/DTCP requirements, just 200m from the Main Road. Located on the high-growth Vandalur-Walajabad corridor with rapid connectivity to GST Road and ORR, and close to Oragadam Industrial Park and Sriperumbudur SIPCOT. Rate: ₹8.5 Cr per Acre, negotiable."
+},
+	{
+    id: 189,
+    state: "Tamil Nadu",
+    title: "Medical SEZ - Hospital & Science Park Land",
+    city: "Chennai",
+    primeLocation: "Near Chennai",
+    price: 0,
+    ratePerAcre: "N/A - Total Value",
+    totalPrice: 550,
+    displayPrice: "₹550 Cr",
+    area: "386.9 Acres",
+    code: "Vaishnavi",
+    image: "images/property189.jpg",
+    description: "Medical Special Economic Zone (SEZ) near Chennai with proposed medical college, hospital, and largest science park in the region. Total extent 386.9 Acres. Includes 250-bed multi-speciality bio-hospital, proposed to expand to 1000 beds. Built-up area 7,00,000 Sq.ft. Building assessment value ₹140 Cr including all equipment. Land breakdown: 160 Acres + 71.92 Acres individual patta land (231.92 Acres total patta), 40 Acres exchange land, 85 Acres lake, 48.39 Acres other lands. Total saleable extent 386.92 Acres. Inspection requires buyer profile and LOI."
+},
+{
+    id: 190,
+    state: "Tamil Nadu",
+    title: "Multi-Speciality Hospital - Nungambakkam",
+    city: "Chennai",
+    primeLocation: "Nungambakkam",
+    price: 0,
+    ratePerAcre: "N/A - Total Value",
+    totalPrice: 300,
+    displayPrice: "₹300 Cr",
+    area: "10 Grounds (24,000 Sq.ft)",
+    code: "Vaishnavi",
+    image: "images/property190.jpg",
+    description: "Fully operational multi-speciality hospital for sale at Nungambakkam, Chennai. 100-bed facility with 4 major and minor OTs, 20-bed ICU. Land area 10 Grounds (24,000 Sq.ft), building area 79,324 Sq.ft (G+5), building age 5 years. Departments include Cardiology, Critical Care, Dermatology, ENT, General Medicine, Gastroenterology, Nephrology, Neurology, Obstetrics & Gynaecology, Oral & Maxillofacial Surgery, Orthopaedics, Plastic Surgery, Psychiatry, Surgical Oncology, and Vascular Surgery. Equipped with ECG, ECHO, TMT, Cath Lab, and 24-hour ambulatory BP and Holter monitoring."
+},
+{
+    id: 191,
+    state: "Tamil Nadu",
+    title: "Multi-Speciality Hospital & Medical Centre - Coimbatore",
+    city: "Coimbatore",
+    primeLocation: "Coimbatore",
+    price: 0,
+    ratePerAcre: "N/A - Total Value",
+    totalPrice: 450,
+    displayPrice: "₹450 Cr",
+    area: "50 Cents",
+    code: "Vaishnavi",
+    image: "images/property191.jpg",
+    description: "Fully staffed and operational multi-speciality hospital and medical centre for sale in Coimbatore. Land area 50 Cents, built-up area 1,00,000 Sq.ft across 5 floors (1+4), 300 beds. Full specialist team across Urology, Paediatrics, Nephrology, Pulmonology, Cardiothoracic, Orthopedics, Interventional Cardiology, Radiology, Oncology, Anaesthesia, and Neurology, with 3 operation theatres, lab, and pharmacy. Staffed with 15 general doctors, 100 nurses, 2 ambulances, and 50 technical/non-technical staff. Interested buyers must provide profile and LOI letter."
+},
+{
+    id: 192,
+    state: "Tamil Nadu",
+    title: "Exclusive Mandate - ECR Mahabalipuram Land",
+    city: "Mahabalipuram",
+    primeLocation: "ECR Mahabalipuram, Next to Kaladan Samudhra & ITC Kenses",
+    price: 0,
+    ratePerAcre: "₹5.25 Cr (Total, Slightly Negotiable)",
+    totalPrice: 5.25,
+    displayPrice: "₹5.25 Cr",
+    area: "4.83 Grounds",
+    code: "Vaishnavi",
+    image: "images/property192.jpg",
+    description: "Exclusive mandate property on ECR, Mahabalipuram, next to Kaladan Samudhra and ITC Kenses. Part of the Shore Temple Town Layout. Total extent 4.83 Grounds. Price ₹5.25 Cr, slightly negotiable."
 }
 ];
 
