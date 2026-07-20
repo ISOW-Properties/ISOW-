@@ -1675,7 +1675,6 @@ const properties = [
     image: "images/property231.jpg",
     description: "5 Acres of land located on the East Tambaram to Tiruneermalai Road. Rate: ₹6 Cr per Acre. Price is negotiable upon direct meeting."
 },
-[
 {
     id: 232,
     state: "Tamil Nadu",
