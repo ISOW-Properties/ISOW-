@@ -1899,8 +1899,37 @@ const properties = [
     code: "9789169227",
     image: "images/property246.jpg",
     description: "Commercial building on 3,640 Sq.Ft land with 7,000 Sq.Ft built-up. Tenants include MedPlus, Sangeetha Mobiles, Men's Hostel, Medical Lab and two 3BHK houses. Monthly income ₹3 Lakhs."
+},
+	{
+    id: 247,
+    state: "Karnataka",
+    title: "Agriculture Zone Land - Near STRR, Devanahalli",
+    city: "Bangalore",
+    primeLocation: "Near Devanahalli, STRR Road",
+    price: 680,
+    ratePerAcre: "₹6 Cr 80 Lakh/Acre",
+    totalPrice: 340,
+    displayPrice: "₹340 Cr",
+    area: "50 Acres",
+    code: "6363741877",
+    image: "images/property216.jpg",
+    description: "Clear general property near Devanahalli, close to STRR (1.5 km away). Agriculture zone land. Total extent 50 Acres. No nala, no buffer, clear title. Rate: ₹6 Cr 80 Lakh per Acre."
+	},
+{
+    id: 248,
+    state: "Tamil Nadu",
+    title: "Direct Owner Dry Land - Oragadam",
+    city: "Chennai",
+    primeLocation: "Oragadam, 1 min from Main Road",
+    price: 1000,
+    ratePerAcre: "₹10 Cr/Acre (Slightly Negotiable)",
+    totalPrice: 120,
+    displayPrice: "₹120 Cr",
+    area: "12 Acres",
+    code: "7358703204",
+    image: "images/property217.jpg",
+    description: "Premium dry land at Oragadam, Chennai's prime manufacturing hub, just 1 minute walkable from the Main Road. Total extent 12 Acres. 40 Ft wide road access, 60 Ft frontage, West facing. Land conversion fully completed (plot itself unapproved). Single owner with clear title. Direct from owner - no aggregators or agreement holders, direct meeting arranged. 100% white transaction. Price ₹10 Cr per Acre, slightly negotiable. Contact: OneKingdom Harvest Realty."
 }
-	
 ];
 
 
