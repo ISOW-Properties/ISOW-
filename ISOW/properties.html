@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta
+    name="viewport"
+    content="width=device-width,initial-scale=1">
+
+<title>Properties | ISOW Properties</title>
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/properties.css">
+<link rel="stylesheet" href="css/nav.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+
+<div class="aurora"></div>
+<div class="gridglow"></div>
+<div class="noise"></div>
+
+<div data-component="nav"></div>
+
+<main class="property-page">
+
+
+<!-- =====================================================
+HERO
+===================================================== -->
+
+<section class="property-hero wrap">
+
+<div class="eyebrow">
+
+PROPERTY EXPLORER
+
+</div>
+
+<h1>
+
+Strategic Land
+
+<span class="brand-word">
+
+Across South India
+
+</span>
+
+</h1>
+
+<p>
+
+Explore verified commercial,
+industrial,
+warehouse,
+resort,
+development
+and investment properties.
+
+</p>
+
+</section>
+
+
+
+<!-- =====================================================
+SEARCH
+===================================================== -->
+
+<section class="property-search wrap glass">
+
+<div class="search-box">
+
+<input
+
+id="search"
+
+type="text"
+
+placeholder="Search location, industrial corridor, warehouse..."
+
+autocomplete="off"
+
+>
+
+<button
+
+id="searchButton"
+
+class="btn primary">
+
+Search
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+FILTERS
+===================================================== -->
+
+<section class="property-filters wrap glass">
+
+<div class="filter-header">
+
+<div>
+
+<div class="eyebrow">
+
+AI FILTERS
+
+</div>
+
+<h3>
+
+Find the right property
+
+</h3>
+
+</div>
+
+<button
+
+id="resetFilters"
+
+class="btn">
+
+Reset
+
+</button>
+
+</div>
+
+
+
+<div class="filter-grid">
+
+<select id="districtFilter">
+
+<option value="">
+
+All Districts
+
+</option>
+
+</select>
+
+<select id="cityFilter">
+
+<option value="">
+
+All Cities
+
+</option>
+
+</select>
+
+<select id="landTypeFilter">
+
+<option value="">
+
+All Land Types
+
+</option>
+
+</select>
+
+<select id="categoryFilter">
+
+<option value="">
+
+All Categories
+
+</option>
+
+</select>
+
+<input
+
+id="minArea"
+
+type="number"
+
+placeholder="Minimum Acres"
+
+>
+
+<input
+
+id="maxArea"
+
+type="number"
+
+placeholder="Maximum Acres"
+
+>
+
+<input
+
+id="maxRate"
+
+type="number"
+
+placeholder="Max ₹ Cr/Acre"
+
+>
+
+
+
+<select id="sort">
+
+<option value="score">
+
+Sort
+
+</option>
+
+<option value="area">
+
+Largest Area
+
+</option>
+
+<option value="price">
+
+Lowest Price
+
+</option>
+
+<option value="frontage">
+
+Highest Frontage
+
+</option>
+
+<option value="name">
+
+Alphabetical
+
+</option>
+
+</select>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+RESULT BAR
+===================================================== -->
+
+<section class="wrap result-bar">
+
+<div>
+
+<strong id="resultCount">
+
+0 Properties
+
+</strong>
+
+</div>
+
+<a
+
+href="ai.html"
+
+class="btn">
+
+Ask ISOW AI
+
+</a>
+
+</section>
+
+
+
+<!-- =====================================================
+PROPERTY GRID
+===================================================== -->
+
+<section class="wrap">
+
+<div
+
+id="propertyGrid"
+
+class="property-grid">
+
+</div>
+
+<div
+
+id="noResults"
+
+class="empty glass"
+
+style="display:none;">
+
+<h3>
+
+No matching properties found.
+
+</h3>
+
+<p>
+
+Try another search
+or ask ISOW AI.
+
+</p>
+
+<a
+
+href="ai.html"
+
+class="btn primary">
+
+Ask ISOW AI
+
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+AI CTA
+===================================================== -->
+
+<section class="section">
+
+<div class="wrap">
+
+<div class="glass ai-discovery">
+
+<div>
+
+<div class="eyebrow">
+
+ISOW AI
+
+</div>
+
+<h2>
+
+Need help choosing?
+
+</h2>
+
+<p>
+
+Describe your requirement
+and let ISOW AI recommend
+the best land.
+
+</p>
+
+</div>
+
+<a
+
+href="ai.html"
+
+class="btn primary">
+
+Open ISOW AI
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+<script src="data/properties.js"></script>
+
+<script src="js/search-engine.js"></script>
+
+<script src="js/app.js"></script>
+
+<script src="js/component-loader.js"></script>
+
+<script src="js/site.js"></script>
+
+<script src="js/properties.js"></script>
+
+</body>
+
+</html>

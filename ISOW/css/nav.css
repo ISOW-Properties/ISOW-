@@ -1,0 +1,264 @@
+/* =====================================================
+   ISOW NAVIGATION
+===================================================== */
+
+.nav {
+    position: fixed;
+    top: 12px;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform: translateY(-18px) scale(.98);
+
+    transition:
+        opacity .45s ease,
+        transform .45s cubic-bezier(.22, 1, .36, 1),
+        visibility .45s ease;
+}
+
+/* =====================================================
+   VISIBLE NAV
+===================================================== */
+
+.nav.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transform: translateY(0) scale(1);
+}
+
+/* =====================================================
+   NAV CONTAINER
+===================================================== */
+
+.nav-inner {
+    width: min(1280px, 94%);
+    height: 55px;
+
+    display: grid;
+    grid-template-columns: 120px 1fr 120px;
+    align-items: center;
+
+    padding: 0 18px;
+
+    border-radius: 18px;
+
+    background: rgba(8, 15, 24, .24);
+
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+
+    border: 1px solid rgba(255,255,255,.06);
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.16),
+        inset 0 1px 0 rgba(255,255,255,.05);
+
+    transition:
+        background .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+}
+
+/* Slightly stronger glass when visible */
+
+.nav.show .nav-inner {
+    background: rgba(8, 15, 24, .32);
+
+    border-color:
+        rgba(255,255,255,.09);
+
+    box-shadow:
+        0 16px 42px rgba(0,0,0,.20),
+        inset 0 1px 0 rgba(255,255,255,.07);
+}
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    justify-self: start;
+}
+
+.nav-logo {
+    width: 52px;
+    height: 38px;
+
+    object-fit: contain;
+}
+
+/* =====================================================
+   NAV LINKS
+===================================================== */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 32px;
+}
+
+.nav-links a {
+    position: relative;
+
+    padding: 6px 2px;
+
+    color: #dfe9f6;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: .04em;
+
+    text-decoration: none;
+
+    transition:
+        color .25s ease,
+        transform .25s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+/* =====================================================
+   ACTIVE / HOVER UNDERLINE
+===================================================== */
+
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: -7px;
+
+    width: 0;
+    height: 2px;
+
+    transform: translateX(-50%);
+
+    border-radius: 999px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #376dff,
+            #16b985
+        );
+
+    box-shadow:
+        0 0 8px rgba(95,185,255,.25);
+
+    transition:
+        width .35s cubic-bezier(.22,1,.36,1);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.nav-links a.active {
+    color: #ffffff;
+}
+
+/* =====================================================
+   EMPTY RIGHT SIDE
+===================================================== */
+
+.nav-spacer {
+    width: 70px;
+    justify-self: end;
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .nav-inner {
+        width: calc(100% - 24px);
+
+        grid-template-columns: 80px 1fr 80px;
+
+        height: 58px;
+
+        padding: 0 14px;
+    }
+
+    .nav-logo {
+        width: 46px;
+        height: 34px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .nav-inner {
+        height: 54px;
+
+        grid-template-columns: 56px 1fr 56px;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 10px;
+        letter-spacing: .02em;
+    }
+
+    .nav-spacer {
+        width: 40px;
+    }
+
+}
+
+@media (max-width: 560px) {
+
+    .nav {
+        top: 8px;
+    }
+
+    .nav-inner {
+        width: calc(100% - 16px);
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 9px;
+    }
+
+    .nav-logo {
+        width: 42px;
+    }
+
+}

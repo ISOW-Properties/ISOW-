@@ -1,0 +1,920 @@
+/* ==========================================================
+   ISOW PROPERTIES PAGE
+   Complete CSS
+   Matches current properties.html
+========================================================== */
+
+
+/* ==========================================================
+   PAGE
+========================================================== */
+
+.property-page {
+    padding-top: 110px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.property-hero {
+    text-align: center;
+    padding: 55px 0 50px;
+}
+
+.property-hero h1 {
+    max-width: 950px;
+    margin: 14px auto 20px;
+    font-size: clamp(46px, 6vw, 78px);
+    line-height: 1.02;
+    letter-spacing: -0.05em;
+}
+
+.property-hero p {
+    max-width: 760px;
+    margin: 0 auto;
+    color: var(--muted, #9eaabd);
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* ==========================================================
+   SEARCH PANEL
+========================================================== */
+
+.property-search {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 22px;
+    border-radius: 24px;
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-box::before {
+    content: "\f002";
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #718197;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.search-box input {
+    flex: 1;
+    width: 100%;
+    height: 58px;
+    padding: 0 18px 0 50px;
+    border-radius: 17px;
+    border: 1px solid rgba(255,255,255,.09);
+    background: rgba(255,255,255,.045);
+    color: #fff;
+    outline: none;
+    font: inherit;
+    font-size: 14px;
+    transition:
+        border-color .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
+}
+
+.search-box input::placeholder {
+    color: #728197;
+}
+
+.search-box input:focus {
+    background: rgba(255,255,255,.06);
+    border-color: rgba(95,185,255,.30);
+    box-shadow: 0 0 0 4px rgba(95,185,255,.06);
+}
+
+.search-box button {
+    flex: 0 0 auto;
+    min-width: 140px;
+    height: 58px;
+}
+
+
+/* ==========================================================
+   FILTER PANEL
+========================================================== */
+
+.property-filters {
+    margin-bottom: 32px;
+    padding: 28px;
+    border-radius: 26px;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.filter-header h3 {
+    margin-top: 7px;
+    font-size: 28px;
+    letter-spacing: -.02em;
+}
+
+.filter-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+}
+
+
+/*
+   IMPORTANT:
+   The current HTML does NOT use .filter-item wrappers.
+   Therefore the controls themselves are styled directly.
+*/
+
+.filter-grid select,
+.filter-grid input {
+    width: 100%;
+    height: 52px;
+    min-width: 0;
+    padding: 0 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,.08);
+    background: rgba(255,255,255,.045);
+    color: #fff;
+    outline: none;
+    font: inherit;
+    font-size: 13px;
+    transition:
+        border-color .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
+}
+
+.filter-grid input::placeholder {
+    color: #77879b;
+}
+
+.filter-grid select {
+    cursor: pointer;
+}
+
+.filter-grid select option {
+    background: #101722;
+    color: #fff;
+}
+
+.filter-grid input:hover,
+.filter-grid select:hover {
+    border-color: rgba(95,185,255,.18);
+}
+
+.filter-grid input:focus,
+.filter-grid select:focus {
+    background: rgba(255,255,255,.06);
+    border-color: rgba(95,185,255,.30);
+    box-shadow: 0 0 0 4px rgba(95,185,255,.06);
+}
+
+
+/* ==========================================================
+   RESULT BAR
+========================================================== */
+
+.result-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 34px auto;
+}
+
+.result-bar strong {
+    font-size: 21px;
+    letter-spacing: -.02em;
+}
+
+.result-bar .btn {
+    min-width: 150px;
+}
+
+
+/* ==========================================================
+   PROPERTY RESULTS
+========================================================== */
+
+.property-results {
+    margin: 45px 0;
+}
+
+.property-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+
+/* ==========================================================
+   PROPERTY CARD
+========================================================== */
+
+.property-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 420px;
+    padding: 24px;
+    border-radius: 25px;
+    overflow: hidden;
+    isolation: isolate;
+    animation: propertyCardIn .5s ease both;
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+}
+
+.property-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(95,185,255,.12),
+            transparent 44%
+        );
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .35s ease;
+    z-index: -1;
+}
+
+.property-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 25px 65px rgba(0,0,0,.25);
+}
+
+.property-card:hover::before {
+    opacity: 1;
+}
+
+
+/* ==========================================================
+   PROPERTY IMAGE
+========================================================== */
+
+.property-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 190px;
+    margin-bottom: 20px;
+    border-radius: 18px;
+    overflow: hidden;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(95,185,255,.09),
+            rgba(255,255,255,.035)
+        );
+    color: #8191a5;
+    font-size: 12px;
+    letter-spacing: .04em;
+}
+
+.property-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(
+            circle at 30% 25%,
+            rgba(255,255,255,.08),
+            transparent 35%
+        );
+    pointer-events: none;
+}
+
+
+/* ==========================================================
+   BADGES
+========================================================== */
+
+.verified-badge {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    z-index: 5;
+    padding: 7px 11px;
+    border-radius: 999px;
+    background: rgba(43,205,139,.13);
+    border: 1px solid rgba(43,205,139,.24);
+    color: #8ef0c4;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    backdrop-filter: blur(10px);
+}
+
+.featured {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 5;
+    padding: 7px 11px;
+    border-radius: 999px;
+    background: rgba(255,194,76,.13);
+    border: 1px solid rgba(255,194,76,.23);
+    color: #ffd978;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    backdrop-filter: blur(10px);
+}
+
+
+/* ==========================================================
+   CARD HEADER
+========================================================== */
+
+.property-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.property-card-header > div:first-child {
+    min-width: 0;
+}
+
+.property-card-header .eyebrow {
+    line-height: 1.4;
+}
+
+.property-card-header h3 {
+    margin: 6px 0 6px;
+    font-size: 25px;
+    line-height: 1.18;
+    letter-spacing: -.025em;
+    word-break: break-word;
+}
+
+.property-card-header p {
+    margin: 0;
+    color: var(--muted, #9eaabd);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* ==========================================================
+   AI SCORE
+========================================================== */
+
+.property-score {
+    position: relative;
+    flex: 0 0 auto;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            rgba(95,185,255,.15),
+            rgba(255,255,255,.04)
+        );
+    border: 1px solid rgba(95,185,255,.20);
+    color: #e8f8ff;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1;
+    box-shadow:
+        inset 0 0 20px rgba(95,185,255,.04);
+}
+
+.property-score::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: 50%;
+    border: 1px solid rgba(95,185,255,.12);
+    animation: scorePulse 3s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes scorePulse {
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: .5;
+    }
+
+    50% {
+        transform: scale(1.08);
+        opacity: 0;
+    }
+}
+
+
+/* ==========================================================
+   PROPERTY INFO
+========================================================== */
+
+.property-info {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.property-info > div {
+    min-width: 0;
+    padding: 14px;
+    border-radius: 16px;
+    background: rgba(255,255,255,.045);
+    border: 1px solid rgba(255,255,255,.055);
+}
+
+.property-info strong {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+.property-info small {
+    display: block;
+    margin-top: 5px;
+    color: #718197;
+    font-size: 10px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+
+/* ==========================================================
+   TAGS
+========================================================== */
+
+.property-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 22px;
+}
+
+.property-tags span {
+    padding: 7px 10px;
+    border-radius: 999px;
+    background: rgba(255,255,255,.045);
+    border: 1px solid rgba(255,255,255,.055);
+    color: #b9c6d4;
+    font-size: 10px;
+    line-height: 1.3;
+}
+
+
+/* ==========================================================
+   CARD ACTIONS
+========================================================== */
+
+.property-actions {
+    display: flex;
+    gap: 9px;
+    margin-top: auto;
+}
+
+.property-actions .btn {
+    flex: 1 1 0;
+    min-width: 0;
+    text-align: center;
+}
+
+.property-actions .btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================================
+   EMPTY STATE
+========================================================== */
+
+.empty {
+    padding: 65px 30px;
+    margin-top: 25px;
+    border-radius: 28px;
+    text-align: center;
+}
+
+.empty h3 {
+    margin: 0 0 12px;
+    font-size: 26px;
+}
+
+.empty p {
+    max-width: 550px;
+    margin: 0 auto 24px;
+    color: var(--muted, #9eaabd);
+    line-height: 1.7;
+}
+
+
+/* ==========================================================
+   AI DISCOVERY
+========================================================== */
+
+.ai-discovery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 38px;
+    border-radius: 28px;
+}
+
+.ai-discovery h2 {
+    margin: 8px 0 10px;
+    font-size: 40px;
+    letter-spacing: -.035em;
+}
+
+.ai-discovery p {
+    max-width: 650px;
+    margin: 0;
+    color: var(--muted, #9eaabd);
+    line-height: 1.7;
+}
+
+.ai-discovery .btn {
+    flex: 0 0 auto;
+}
+
+
+/* ==========================================================
+   RESULT COUNT / SEARCH FEEDBACK
+========================================================== */
+
+#resultCount {
+    transition: opacity .2s ease;
+}
+
+
+/* ==========================================================
+   CARD ENTER ANIMATION
+========================================================== */
+
+@keyframes propertyCardIn {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ==========================================================
+   STAGGER
+========================================================== */
+
+.property-card:nth-child(2) {
+    animation-delay: .04s;
+}
+
+.property-card:nth-child(3) {
+    animation-delay: .08s;
+}
+
+.property-card:nth-child(4) {
+    animation-delay: .12s;
+}
+
+.property-card:nth-child(5) {
+    animation-delay: .16s;
+}
+
+.property-card:nth-child(6) {
+    animation-delay: .20s;
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 1100px) {
+
+    .filter-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .property-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* ==========================================================
+   SMALL TABLET
+========================================================== */
+
+@media (max-width: 850px) {
+
+    .property-page {
+        padding-top: 85px;
+    }
+
+    .property-hero {
+        padding-top: 35px;
+    }
+
+    .property-hero h1 {
+        font-size: 52px;
+    }
+
+    .filter-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .ai-discovery {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 650px) {
+
+    .property-page {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .property-hero {
+        padding: 25px 0 35px;
+    }
+
+    .property-hero h1 {
+        font-size: 42px;
+        line-height: 1.05;
+    }
+
+    .property-hero p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .property-search {
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-box input {
+        height: 54px;
+    }
+
+    .search-box button {
+        width: 100%;
+        height: 52px;
+    }
+
+    .property-filters {
+        padding: 18px;
+        border-radius: 21px;
+    }
+
+    .filter-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .filter-header h3 {
+        font-size: 23px;
+    }
+
+    .filter-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .filter-grid select,
+    .filter-grid input {
+        height: 50px;
+    }
+
+    .result-bar {
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 25px 0;
+    }
+
+    .result-bar .btn {
+        width: 100%;
+    }
+
+    .property-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .property-card {
+        min-height: 0;
+        padding: 19px;
+        border-radius: 22px;
+    }
+
+    .property-image {
+        height: 175px;
+    }
+
+    .property-card-header {
+        gap: 12px;
+    }
+
+    .property-card-header h3 {
+        font-size: 22px;
+    }
+
+    .property-score {
+        width: 52px;
+        height: 52px;
+        font-size: 15px;
+    }
+
+    .property-info {
+        grid-template-columns: 1fr;
+    }
+
+    .property-actions {
+        flex-direction: column;
+    }
+
+    .property-actions .btn {
+        width: 100%;
+    }
+
+    .ai-discovery {
+        padding: 25px;
+        border-radius: 23px;
+    }
+
+    .ai-discovery h2 {
+        font-size: 32px;
+    }
+
+}
+
+
+/* ==========================================================
+   VERY SMALL PHONES
+========================================================== */
+
+@media (max-width: 420px) {
+
+    .property-hero h1 {
+        font-size: 36px;
+    }
+
+    .property-card {
+        padding: 16px;
+    }
+
+    .property-image {
+        height: 150px;
+    }
+
+}
+.property-image{
+
+    width:100%;
+
+    height:220px;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    margin-bottom:20px;
+
+    background:#1b2430;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.property-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.property-image i{
+
+    font-size:42px;
+
+    color:#5b6c82;
+
+}
+.property-card{
+
+    position:relative;
+
+}
+
+.property-id{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    width:54px;
+
+    height:54px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(64,120,255,.18);
+
+    border:1px solid rgba(90,170,255,.35);
+
+    backdrop-filter:blur(8px);
+
+    color:#fff;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    line-height:1;
+
+    transition:.3s;
+
+}
+
+.property-card:hover .property-id{
+
+    transform:scale(1.08);
+
+    border-color:#4ea8ff;
+
+}
+

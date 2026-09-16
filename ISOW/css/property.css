@@ -1,0 +1,1280 @@
+/* =====================================================
+PROPERTY PAGE
+===================================================== */
+
+.property-page{
+
+    padding-top:140px;
+
+    padding-bottom:90px;
+
+}
+
+.back-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#9fc7ff;
+
+    font-size:15px;
+
+    margin-bottom:32px;
+
+    transition:.3s;
+
+}
+
+.back-link:hover{
+
+    color:#ffffff;
+
+}
+
+
+/* =====================================================
+LAYOUT
+===================================================== */
+
+.property-layout{
+
+    display:grid;
+
+    grid-template-columns:370px 1fr;
+
+    gap:30px;
+
+    align-items:start;
+
+}
+
+
+/* =====================================================
+LEFT PANEL
+===================================================== */
+
+.property-left{
+
+    position:sticky;
+
+    top:110px;
+
+    min-height:760px;
+
+    padding:42px;
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+    background:
+
+        linear-gradient(
+
+        155deg,
+
+        rgba(255,255,255,.08),
+
+        rgba(255,255,255,.03)
+
+        );
+
+}
+
+
+/* Background Glow */
+
+.left-bg{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+}
+
+.left-bg::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    top:-140px;
+
+    right:-120px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+
+        circle,
+
+        rgba(55,109,255,.22),
+
+        transparent 72%
+
+    );
+
+    filter:blur(40px);
+
+}
+
+.left-bg::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+
+    height:260px;
+
+    bottom:-120px;
+
+    left:-120px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+
+        circle,
+
+        rgba(22,185,133,.18),
+
+        transparent 70%
+
+    );
+
+    filter:blur(35px);
+
+}
+
+.property-left>*{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/* =====================================================
+TITLE
+===================================================== */
+.property-left h1{
+
+    margin:18px 0 22px;
+
+    font-size:clamp(34px,3vw,56px);
+
+    line-height:1.08;
+
+    letter-spacing:-0.05em;
+
+    font-weight:800;
+
+    color:#fff;
+
+    word-break:break-word;
+
+    overflow-wrap:break-word;
+
+    hyphens:auto;
+
+}
+
+.property-type{
+
+    font-size:22px;
+
+    color:#b8c8d9;
+
+    margin-bottom:28px;
+
+}
+
+.property-location{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:12px;
+
+    color:#d7e3ee;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.property-location i{
+
+    color:#5fb9ff;
+
+    margin-top:5px;
+
+}
+
+
+/* =====================================================
+USAGE
+===================================================== */
+
+.usage-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:25px;
+
+}
+
+.usage-list span{
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.06);
+
+    font-size:13px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.usage-list span:hover{
+
+    background:
+
+    linear-gradient(
+
+    135deg,
+
+    #376dff,
+
+    #16b985
+
+    );
+
+}
+
+
+/* =====================================================
+BRANDING
+===================================================== */
+
+.property-brand{
+
+    margin-top:70px;
+
+    padding-top:30px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.property-brand h3{
+
+    margin:0;
+
+    font-size:24px;
+
+}
+
+.property-brand p{
+
+    margin-top:10px;
+
+    color:#91a7ba;
+
+    line-height:1.7;
+
+}
+/* =====================================================
+RIGHT PANEL
+===================================================== */
+
+.property-right{
+
+    padding:34px;
+
+    border-radius:28px;
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            rgba(255,255,255,.075),
+
+            rgba(255,255,255,.025)
+
+        );
+
+}
+
+
+/* =====================================================
+SECTION TITLE
+===================================================== */
+
+.section-title{
+
+    margin-bottom:24px;
+
+}
+
+.section-title h2{
+
+    margin:0;
+
+    font-size:30px;
+
+    line-height:1.15;
+
+    letter-spacing:-.03em;
+
+}
+
+
+/* =====================================================
+DETAIL GRID
+===================================================== */
+
+.details-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(2,minmax(0,1fr));
+
+    gap:14px;
+
+}
+
+
+/* =====================================================
+DETAIL CARD
+===================================================== */
+
+.detail-item{
+
+    position:relative;
+
+    padding:20px;
+
+    min-height:92px;
+
+    border-radius:18px;
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            rgba(255,255,255,.055),
+
+            rgba(255,255,255,.025)
+
+        );
+
+    border:
+
+        1px solid
+
+        rgba(255,255,255,.08);
+
+    transition:
+
+        transform .3s ease,
+
+        border-color .3s ease,
+
+        background .3s ease;
+
+}
+
+.detail-item:hover{
+
+    transform:translateY(-3px);
+
+    border-color:
+
+        rgba(95,185,255,.35);
+
+    background:
+
+        rgba(255,255,255,.075);
+
+}
+
+
+/* =====================================================
+LABEL
+===================================================== */
+
+.detail-item small{
+
+    display:block;
+
+    margin-bottom:9px;
+
+    color:#8fa5b8;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:.11em;
+
+    text-transform:uppercase;
+
+}
+
+
+/* =====================================================
+VALUE
+===================================================== */
+
+.detail-item strong{
+
+    display:block;
+
+    color:#f5f9fd;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    line-height:1.35;
+
+    word-break:break-word;
+
+}
+
+
+/* =====================================================
+IMPORTANT VALUES
+===================================================== */
+
+.detail-item strong[data-price]{
+
+    color:#9fe6d1;
+
+    font-size:20px;
+
+}
+
+.detail-item strong[data-area]{
+
+    color:#9fc7ff;
+
+    font-size:20px;
+
+}
+
+
+/* =====================================================
+PROPERTY SECTIONS
+===================================================== */
+
+.property-section{
+
+    margin-top:28px;
+
+    padding:34px;
+
+    border-radius:28px;
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            rgba(255,255,255,.065),
+
+            rgba(255,255,255,.025)
+
+        );
+
+}
+
+
+/* =====================================================
+SECTION HEADING
+===================================================== */
+
+.property-section h2{
+
+    margin:0;
+
+    font-size:28px;
+
+    letter-spacing:-.03em;
+
+}
+
+
+/* =====================================================
+SECTION HEADER
+===================================================== */
+
+.section-header{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+}
+
+.section-header h2{
+
+    margin:5px 0 0;
+
+}
+
+
+/* =====================================================
+DESCRIPTION
+===================================================== */
+
+.property-description{
+
+    margin:18px 0 0;
+
+    max-width:900px;
+
+    color:#bccbd8;
+
+    font-size:15px;
+
+    line-height:1.85;
+
+}
+
+
+/* =====================================================
+CONTACT SECTION
+===================================================== */
+
+.contact-section{
+
+    overflow:hidden;
+
+}
+
+.contact-section .section-title p{
+
+    max-width:760px;
+
+    margin:12px 0 0;
+
+    line-height:1.7;
+
+}
+
+
+/* =====================================================
+ACTION BUTTONS
+===================================================== */
+
+.action-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(4,minmax(0,1fr));
+
+    gap:12px;
+
+    margin-top:26px;
+
+}
+
+.action-grid .btn{
+
+    min-height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:9px;
+
+    text-align:center;
+
+}
+
+
+/* =====================================================
+MAP BUTTON
+===================================================== */
+
+[data-map]{
+
+    flex-shrink:0;
+
+}
+
+
+/* =====================================================
+BACK LINK
+===================================================== */
+
+.back-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:30px;
+
+    color:#9fc7ff;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:.3s ease;
+
+}
+
+.back-link:hover{
+
+    color:#ffffff;
+
+    transform:translateX(-3px);
+
+}
+/* =====================================================
+CONNECTIVITY
+===================================================== */
+
+.property-section{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.property-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:280px;
+
+    height:280px;
+
+    top:-120px;
+
+    right:-120px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+
+        circle,
+
+        rgba(55,109,255,.08),
+
+        transparent 72%
+
+    );
+
+    filter:blur(45px);
+
+    pointer-events:none;
+
+}
+
+.property-section>*{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/* =====================================================
+CONNECTIVITY GRID
+===================================================== */
+
+.property-section .details-grid{
+
+    margin-top:28px;
+
+}
+
+.property-section .detail-item{
+
+    min-height:88px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+
+/* =====================================================
+DESCRIPTION
+===================================================== */
+
+.property-description{
+
+    margin-top:22px;
+
+    font-size:16px;
+
+    line-height:1.9;
+
+    color:#c8d5e2;
+
+    text-align:justify;
+
+}
+
+
+/* =====================================================
+GOOGLE MAP SECTION
+===================================================== */
+
+.section-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.section-header .btn{
+
+    min-width:220px;
+
+}
+
+
+/* =====================================================
+CONTACT
+===================================================== */
+
+.contact-section{
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            rgba(55,109,255,.08),
+
+            rgba(22,185,133,.05)
+
+        );
+
+}
+
+.contact-section p{
+
+    color:#b8c7d6;
+
+    max-width:760px;
+
+}
+
+
+/* =====================================================
+ACTION GRID
+===================================================== */
+
+.action-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(4,1fr);
+
+    gap:18px;
+
+    margin-top:30px;
+
+}
+
+.action-grid .btn{
+
+    height:58px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    border-radius:16px;
+
+    font-size:15px;
+
+    font-weight:700;
+
+}
+
+.action-grid .btn i{
+
+    font-size:18px;
+
+}
+
+
+/* =====================================================
+BUTTON HOVER
+===================================================== */
+
+.action-grid .btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+/* =====================================================
+GOOGLE MAP BUTTON
+===================================================== */
+
+[data-map]{
+
+    min-width:220px;
+
+}
+/* =====================================================
+PREMIUM ANIMATIONS
+===================================================== */
+
+.property-left,
+.property-right,
+.property-section{
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.property-right:hover,
+.property-section:hover{
+
+    transform:translateY(-4px);
+
+    border-color:rgba(95,185,255,.25);
+
+    box-shadow:
+
+        0 30px 80px rgba(0,0,0,.28);
+
+}
+
+
+/* =====================================================
+DETAIL CARD HOVER
+===================================================== */
+
+.detail-item{
+
+    overflow:hidden;
+
+}
+
+.detail-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:0;
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            rgba(55,109,255,.10),
+
+            rgba(22,185,133,.08)
+
+        );
+
+    transition:.35s;
+
+}
+
+.detail-item:hover::before{
+
+    opacity:1;
+
+}
+
+.detail-item>*{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/* =====================================================
+PROPERTY NAME
+===================================================== */
+
+.property-left h1{
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            #ffffff,
+
+            #dce7ff,
+
+            #bfe9dc
+
+        );
+
+    -webkit-background-clip:text;
+
+    background-clip:text;
+
+    color:transparent;
+
+}
+
+
+/* =====================================================
+LEFT PANEL DIVIDER
+===================================================== */
+
+.property-left h1::after{
+
+    content:"";
+
+    display:block;
+
+    width:90px;
+
+    height:4px;
+
+    margin-top:18px;
+
+    border-radius:999px;
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            #376dff,
+
+            #16b985
+
+        );
+
+}
+
+
+/* =====================================================
+USAGE TAG HOVER
+===================================================== */
+
+.usage-list span{
+
+    cursor:default;
+
+}
+
+.usage-list span:hover{
+
+    color:#fff;
+
+    border-color:transparent;
+
+    box-shadow:
+
+        0 12px 28px rgba(55,109,255,.25);
+
+}
+
+
+/* =====================================================
+BUTTONS
+===================================================== */
+
+.btn{
+
+    transition:
+
+        .35s ease;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+
+/* =====================================================
+BACK BUTTON
+===================================================== */
+
+.back-link{
+
+    transition:.3s;
+
+}
+
+.back-link:hover{
+
+    transform:translateX(-6px);
+
+}
+
+
+/* =====================================================
+SECTION SPACING
+===================================================== */
+
+.property-section{
+
+    margin-top:34px;
+
+}
+.back-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:14px 24px;
+
+    margin-bottom:35px;
+
+    border-radius:999px;
+
+    color:#a9c8f6;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.18),
+        inset 0 1px 0 rgba(255,255,255,.06);
+
+    transition:.35s ease;
+
+}
+
+.back-link i{
+
+    font-size:22px;
+
+    transition:.35s ease;
+
+}
+
+.back-link:hover{
+
+    color:#ffffff;
+
+    background:rgba(255,255,255,.10);
+
+    border-color:rgba(95,185,255,.28);
+
+    transform:translateX(-5px);
+
+    box-shadow:
+        0 18px 45px rgba(0,0,0,.25);
+
+}
+
+.back-link:hover i{
+
+    transform:translateX(-4px);
+
+}
+
+
+/* =====================================================
+RESPONSIVE
+===================================================== */
+
+@media(max-width:1100px){
+
+.property-layout{
+
+grid-template-columns:320px 1fr;
+
+}
+
+.property-left h1{
+
+font-size:46px;
+
+}
+
+}
+
+@media(max-width:900px){
+
+.property-layout{
+
+grid-template-columns:1fr;
+
+}
+
+.property-left{
+
+position:relative;
+
+top:0;
+
+min-height:auto;
+
+}
+
+.details-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.action-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+}
+
+@media(max-width:650px){
+
+.property-page{
+
+padding-top:110px;
+
+}
+
+.property-left{
+
+padding:28px;
+
+}
+
+.property-right{
+
+padding:28px;
+
+}
+
+.property-section{
+
+padding:28px;
+
+}
+
+.property-left h1{
+
+font-size:38px;
+
+}
+
+.action-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.section-header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+[data-map]{
+
+width:100%;
+
+}
+
+}
