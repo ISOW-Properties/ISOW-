@@ -1174,3 +1174,263 @@
     line-height: 1.55;
     text-align: left;
 }
+/* =========================================================
+   AI PAGE MOBILE RESPONSIVE CSS
+   Paste at bottom of css/ai.css
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .ai-page {
+        overflow-x: hidden;
+    }
+
+    .ai-page .wrap {
+        width: min(100% - 28px, 1100px);
+        margin-inline: auto;
+    }
+
+    .ai-hero {
+        padding-top: 90px;
+        padding-bottom: 35px;
+    }
+
+    .ai-hero h1 {
+        font-size: clamp(36px, 9vw, 52px);
+        line-height: 1.08;
+        letter-spacing: -0.04em;
+    }
+
+    .ai-workspace {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .ai-panel {
+        min-height: 72vh;
+        border-radius: 22px;
+    }
+
+    .ai-side {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .ai-results {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .ai-page .wrap {
+        width: calc(100% - 22px);
+    }
+
+    .ai-hero {
+        padding-top: 78px;
+        padding-bottom: 24px;
+    }
+
+    .ai-hero h1 {
+        font-size: 38px;
+        line-height: 1.08;
+    }
+
+    .ai-panel {
+        min-height: calc(100dvh - 140px);
+        border-radius: 18px;
+    }
+
+    .ai-panel-header {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .ai-panel-header h2 {
+        font-size: 21px;
+    }
+
+    .ai-status {
+        padding: 7px 10px;
+        font-size: 11px;
+    }
+
+    .ai-messages {
+        padding: 16px;
+        min-height: 380px;
+    }
+
+    .msg {
+        margin-bottom: 14px;
+    }
+
+    .msg.user {
+        padding-left: 0;
+    }
+
+    .msg.user > *,
+    .user-bubble {
+        max-width: 92%;
+    }
+
+    .ai-welcome,
+    .ai-question-card {
+        padding: 17px;
+        border-radius: 18px;
+    }
+
+    .ai-welcome h3,
+    .ai-question-card h3 {
+        font-size: 20px;
+        line-height: 1.25;
+    }
+
+    .ai-welcome p,
+    .ai-question-card p,
+    .ai-response-text {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .example-prompts {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .prompt-chip {
+        width: 100%;
+        text-align: left;
+        justify-content: flex-start;
+        padding: 11px 13px;
+        font-size: 12px;
+        border-radius: 14px;
+    }
+
+    .ai-input-area {
+        position: sticky;
+        bottom: 0;
+        z-index: 5;
+
+        padding: 13px;
+        padding-bottom: max(13px, env(safe-area-inset-bottom));
+
+        background: rgba(7, 11, 20, .92);
+        backdrop-filter: blur(14px);
+    }
+
+    .ai-input-wrap {
+        gap: 6px;
+    }
+
+    .ai-input {
+        min-height: 52px;
+        max-height: 130px;
+
+        padding: 14px 96px 14px 14px;
+
+        font-size: 14px;
+        border-radius: 16px;
+    }
+
+    .ai-icon-button,
+    .ai-send {
+        width: 38px;
+        height: 38px;
+        bottom: 7px;
+        border-radius: 12px;
+    }
+
+    .ai-icon-button {
+        right: 52px;
+    }
+
+    .ai-send {
+        right: 7px;
+    }
+
+    .ai-input-hint {
+        font-size: 10px;
+        line-height: 1.4;
+    }
+
+    .ai-input-hint span {
+        display: block;
+        margin-top: 3px;
+    }
+
+    .ai-results {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .ai-result-card {
+        min-height: auto;
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .ai-result-card.clean-card {
+        aspect-ratio: auto;
+        min-height: 230px;
+    }
+
+    .clean-card-head h3,
+    .ai-result-top h3 {
+        font-size: 18px;
+    }
+
+    .clean-card-meta,
+    .ai-result-meta {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .clean-card-actions,
+    .ai-result-actions {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .clean-card-actions .btn,
+    .ai-result-actions .btn {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .ai-side {
+        display: none;
+    }
+}
+
+
+@media (max-width: 420px) {
+
+    .ai-hero h1 {
+        font-size: 33px;
+    }
+
+    .ai-panel-header {
+        align-items: flex-start;
+    }
+
+    .ai-status {
+        display: none;
+    }
+
+    .ai-messages {
+        padding: 13px;
+    }
+
+    .ai-input {
+        padding-right: 92px;
+    }
+
+    .prompt-chip {
+        font-size: 11px;
+    }
+}
