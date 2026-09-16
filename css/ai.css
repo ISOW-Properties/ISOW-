@@ -1400,3 +1400,161 @@
         display: none;
     }
 }
+/* =========================================================
+   MOBILE - MAKE AI BOX + RESULT CARDS WIDER
+   Paste at bottom of css/ai.css
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .ai-workspace {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .ai-panel {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .ai-messages {
+        width: 100%;
+    }
+
+    .ai-welcome,
+    .ai-question-card,
+    .ai-response {
+        width: 100%;
+        max-width: none;
+    }
+
+    .ai-results {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .ai-result-card,
+    .ai-result-card.clean-card {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        aspect-ratio: auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .ai-page .wrap {
+        width: calc(100% - 16px);
+        max-width: 100%;
+    }
+
+    .ai-panel {
+        border-radius: 18px;
+    }
+
+    .ai-messages {
+        padding: 12px;
+    }
+
+    .ai-welcome,
+    .ai-question-card {
+        width: 100%;
+        max-width: none;
+        padding: 18px;
+        border-radius: 18px;
+    }
+
+    .ai-welcome h3,
+    .ai-question-card h3 {
+        font-size: 22px;
+        line-height: 1.25;
+    }
+
+    .example-prompts {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .prompt-chip {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .ai-response {
+        width: 100%;
+        max-width: none;
+    }
+
+    .ai-results {
+        width: 100%;
+        grid-template-columns: 1fr !important;
+        gap: 16px;
+    }
+
+    .ai-result-card,
+    .ai-result-card.clean-card {
+        width: 100%;
+        max-width: 100%;
+        padding: 18px;
+        border-radius: 20px;
+    }
+
+    .ai-result-top h3,
+    .clean-card-head h3 {
+        font-size: 21px;
+    }
+
+    .ai-result-meta,
+    .clean-card-meta {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .ai-result-actions,
+    .clean-card-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 9px;
+    }
+
+    .ai-result-actions .btn,
+    .clean-card-actions .btn {
+        width: 100%;
+        min-height: 46px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 420px) {
+
+    .ai-page .wrap {
+        width: calc(100% - 10px);
+    }
+
+    .ai-messages {
+        padding: 8px;
+    }
+
+    .ai-welcome,
+    .ai-question-card,
+    .ai-result-card,
+    .ai-result-card.clean-card {
+        border-radius: 16px;
+    }
+
+    .ai-result-meta,
+    .clean-card-meta {
+        grid-template-columns: 1fr;
+    }
+}
