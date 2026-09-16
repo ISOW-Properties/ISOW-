@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width,initial-scale=1">
+
+    <title>Connect | ISOW Properties</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/connect.css">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="aurora"></div>
+
+    <div class="gridglow"></div>
+
+    <div class="noise"></div>
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <header class="nav show">
+
+        <div class="nav-inner">
+
+            <a href="index.html">
+
+                <img
+                    class="nav-logo logo-sticker"
+                    src="assets/isow-logo.png"
+                    alt="ISOW">
+
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="index.html">HOME</a>
+
+                <a href="properties.html">PROPERTIES</a>
+
+                <a href="ai.html">ISOW AI</a>
+
+                <a href="about.html">ABOUT</a>
+
+                <a href="connect.html">CONNECT</a>
+
+            </nav>
+
+            <div class="spacer"></div>
+
+    
+
+        </div>
+
+    </header>
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="wrap">
+
+        <section class="page-hero">
+
+            <div class="eyebrow">
+
+                CONNECT WITH ISOW
+
+            </div>
+
+            <h1>
+
+                Let's find the right opportunity.
+
+            </h1>
+
+            <p>
+
+                Share your requirement and we'll help you move from
+                brief to shortlist.
+
+            </p>
+
+        </section>
+
+        <!-- =====================================================
+             CONTACT SECTION
+        ====================================================== -->
+
+        <section class="section">
+
+            <div class="ai-shell">
+
+                <!-- Contact Details -->
+
+                <div class="contact-card glass">
+
+                    <div class="eyebrow">
+
+                        CONTACT
+
+                    </div>
+
+                    <div
+                        class="contact-list"
+                        style="margin-top:16px">
+
+                        <a
+                            class="contact-item"
+                            href="tel:+918593076501">
+
+                            📞 Call
+
+                        </a>
+
+                        <a
+                            class="contact-item"
+                            href="https://wa.me/918593076501"
+                            target="_blank">
+
+                            💬 WhatsApp
+
+                        </a>
+
+                        <a
+                            class="contact-item"
+                            href="mailto:isowproperties@gmail.com">
+
+                            ✉️ Email
+
+                        </a>
+
+                        <a
+                            class="contact-item"
+                            href="https://www.facebook.com/people/Isow-Property/61585073757517/"
+                            target="_blank">
+
+                            Facebook
+
+                        </a>
+
+                        <a
+                            class="contact-item"
+                            href="https://www.linkedin.com/company/isowproperties/"
+                            target="_blank">
+
+                            LinkedIn
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Contact Form -->
+
+               <form
+    class="contact glass"
+    id="contactForm">
+
+                    <input
+    class="control"
+    id="name"
+    placeholder="Your Name"
+    required>
+
+<input
+    class="control"
+    id="phone"
+    placeholder="Phone / WhatsApp"
+    required>
+
+<input
+    class="control full"
+    type="email"
+    id="email"
+    placeholder="Email">
+
+<input
+    class="control full"
+    id="requirement"
+    placeholder="Requirement Headline">
+
+<textarea
+    class="control full"
+    id="message"
+    placeholder="Tell us your location, acreage, budget and intended use...">
+</textarea>                 
+ <button
+    class="btn primary"
+    type="submit">
+
+    Send Requirement
+
+</button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer>
+
+        <div class="wrap">
+
+            <p class="muted">
+
+                ISOW Properties 
+                
+
+            </p>
+
+        </div>
+
+    </footer>
+    <script>
+
+document.getElementById("contactForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    const name =
+        document.getElementById("name").value;
+
+    const phone =
+        document.getElementById("phone").value;
+
+    const email =
+        document.getElementById("email").value;
+
+    const requirement =
+        document.getElementById("requirement").value;
+
+    const message =
+        document.getElementById("message").value;
+
+    const text =
+
+`Hello ISOW Properties,
+
+I would like to enquire about a property.
+
+--------------------------------
+
+Name:
+${name}
+
+Phone:
+${phone}
+
+Email:
+${email}
+
+Requirement:
+${requirement}
+
+Message:
+${message}
+
+--------------------------------
+
+Sent from ISOW Properties Website`;
+
+    window.open(
+
+        "https://wa.me/918593076501?text=" +
+
+        encodeURIComponent(text),
+
+        "_blank"
+
+    );
+
+});
+
+</script>
+
+</body>
+
+</html>
