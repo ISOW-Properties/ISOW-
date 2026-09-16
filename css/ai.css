@@ -1445,116 +1445,84 @@
     }
 }
 
+/* =========================================================
+   FORCE WIDER AI WELCOME BOX ON MOBILE
+   Paste in the LAST loaded CSS file
+   ========================================================= */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
-    .ai-page .wrap {
-        width: calc(100% - 16px);
-        max-width: 100%;
+    .ai-workspace.wrap {
+        width: 100vw !important;
+        max-width: 100vw !important;
+
+        margin-left: 50% !important;
+        margin-right: 0 !important;
+
+        transform: translateX(-50%) !important;
+
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        box-sizing: border-box !important;
     }
 
     .ai-panel {
-        border-radius: 18px;
+        width: 100% !important;
+        max-width: 100% !important;
+
+        border-radius: 18px !important;
     }
 
     .ai-messages {
-        padding: 12px;
+        width: 100% !important;
+
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+
+        box-sizing: border-box !important;
+    }
+
+    .msg.ai {
+        width: 100% !important;
+        max-width: 100% !important;
     }
 
     .ai-welcome,
     .ai-question-card {
-        width: 100%;
-        max-width: none;
-        padding: 18px;
-        border-radius: 18px;
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+
+        padding: 22px !important;
+        box-sizing: border-box !important;
+
+        border-radius: 20px !important;
     }
 
     .ai-welcome h3,
     .ai-question-card h3 {
-        font-size: 22px;
-        line-height: 1.25;
+        font-size: 28px !important;
+        line-height: 1.2 !important;
     }
 
     .example-prompts {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
+        width: 100% !important;
+
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
     }
 
     .prompt-chip {
-        width: 100%;
-        max-width: 100%;
-        text-align: center;
-        justify-content: center;
-    }
+        width: 100% !important;
+        max-width: 100% !important;
 
-    .ai-response {
-        width: 100%;
-        max-width: none;
-    }
+        text-align: left !important;
+        justify-content: flex-start !important;
 
-    .ai-results {
-        width: 100%;
-        grid-template-columns: 1fr !important;
-        gap: 16px;
-    }
-
-    .ai-result-card,
-    .ai-result-card.clean-card {
-        width: 100%;
-        max-width: 100%;
-        padding: 18px;
-        border-radius: 20px;
-    }
-
-    .ai-result-top h3,
-    .clean-card-head h3 {
-        font-size: 21px;
-    }
-
-    .ai-result-meta,
-    .clean-card-meta {
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }
-
-    .ai-result-actions,
-    .clean-card-actions {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 9px;
-    }
-
-    .ai-result-actions .btn,
-    .clean-card-actions .btn {
-        width: 100%;
-        min-height: 46px;
-        justify-content: center;
-        text-align: center;
-    }
-}
-
-
-@media (max-width: 420px) {
-
-    .ai-page .wrap {
-        width: calc(100% - 10px);
-    }
-
-    .ai-messages {
-        padding: 8px;
-    }
-
-    .ai-welcome,
-    .ai-question-card,
-    .ai-result-card,
-    .ai-result-card.clean-card {
-        border-radius: 16px;
-    }
-
-    .ai-result-meta,
-    .clean-card-meta {
-        grid-template-columns: 1fr;
+        padding: 14px 16px !important;
+        border-radius: 18px !important;
     }
 }
