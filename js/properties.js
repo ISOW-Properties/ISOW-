@@ -232,15 +232,7 @@ populateSelect(
     unique("state"),
     "All States"
 );
-populateSelect(
-
-district,
-
-unique("district"),
-
-"All Districts"
-
-);
+refreshDistrictFilter();
 
 populateSelect(
 
