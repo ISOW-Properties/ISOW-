@@ -1158,42 +1158,18 @@ function update(){
 /* ==========================================================
    RESET FILTERS
 ========================================================== */
-
 function resetAll(){
 
     if(search)
         search.value = "";
-if(state)
-    state.value = "";
+
+    if(state)
+        state.value = "";
+
+    refreshDistrictFilter();
+
     if(district)
         district.value = "";
-
-    if(city)
-        city.value = "";
-
-    if(landType)
-        landType.value = "";
-
-    if(category)
-        category.value = "";
-
-    if(minArea)
-        minArea.value = "";
-
-    if(maxArea)
-        maxArea.value = "";
-
-    if(maxRate)
-        maxRate.value = "";
-
-    if(roadWidth)
-        roadWidth.value = "";
-
-    if(frontage)
-        frontage.value = "";
-
-    if(exclusive)
-        exclusive.value = "";
 
     if(sort)
         sort.value = "score";
