@@ -763,54 +763,37 @@ function exclusiveMatch(property){
 function matchesAllFilters(property){
 
     if(
-
         search &&
-
         !searchMatch(
-
             property,
-
             search.value
-
         )
-
     ){
-
         return false;
-
-    }if (
-    !stateMatch(
-        property,
-        state &&
-        state.value
-    )
-) {
-    return false;
-}
-
-    if(
-
-        !districtMatch(
-
-            property,
-
-            district
-
-            ? district.value
-
-            : ""
-
-        )
-
-    ){
-
-        return false;
-
     }
 
+    if(
+        !stateMatch(
+            property,
+            state &&
+            state.value
+        )
+    ){
+        return false;
+    }
 
+    if(
+        !districtMatch(
+            property,
+            district &&
+            district.value
+        )
+    ){
+        return false;
+    }
+
+    return true;
 }
-
 
 /* ==========================================================
    FILTERED PROPERTIES
