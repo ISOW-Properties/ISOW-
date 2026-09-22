@@ -170,7 +170,11 @@ function populateSelect(
 /* ==========================================================
    INITIALISE FILTERS
 ========================================================== */
-
+populateSelect(
+    state,
+    unique("state"),
+    "All States"
+);
 populateSelect(
 
 district,
