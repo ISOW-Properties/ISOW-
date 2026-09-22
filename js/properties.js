@@ -1232,39 +1232,7 @@ function resetAll(){
    EVENTS
 ========================================================== */
 
-[
-    search,
-    state,
-    district,
-    city,
-    landType,
-    category,
-    minArea,
-    maxArea,
-    maxRate,
-    roadWidth,
-    frontage,
-    exclusive,
-    sort
 
-]
-
-.forEach(element => {
-
-    if(!element)
-        return;
-
-    element.addEventListener(
-        "input",
-        update
-    );
-
-    element.addEventListener(
-        "change",
-        update
-    );
-
-});
 
 
 /* ==========================================================
