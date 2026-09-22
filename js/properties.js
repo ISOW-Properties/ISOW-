@@ -438,7 +438,14 @@ function getSearchText(property){
 /* ==========================================================
    SEARCH MATCH
 ========================================================== */
+function stateMatch(property, value) {
 
+    if (!value)
+        return true;
+
+    return normalize(property.state) === normalize(value);
+
+}
 function searchMatch(property, query){
 
     const text = normalize(query);
