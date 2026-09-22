@@ -778,8 +778,15 @@ function matchesAllFilters(property){
 
         return false;
 
-    }
-
+    }if (
+    !stateMatch(
+        property,
+        state &&
+        state.value
+    )
+) {
+    return false;
+}
 
     if(
 
@@ -801,126 +808,6 @@ function matchesAllFilters(property){
 
     }
 
-
-    if(
-
-        !cityMatch(
-
-            property,
-
-            city
-
-            ? city.value
-
-            : ""
-
-        )
-
-    ){
-
-        return false;
-
-    }
-
-
-    if(
-
-        !landTypeMatch(
-
-            property,
-
-            landType
-
-            ? landType.value
-
-            : ""
-
-        )
-
-    ){
-
-        return false;
-
-    }
-
-
-    if(
-
-        !categoryMatch(
-
-            property,
-
-            category
-
-            ? category.value
-
-            : ""
-
-        )
-
-    ){
-
-        return false;
-
-    }
-
-
-    if(
-
-        !areaMatch(property)
-
-    ){
-
-        return false;
-
-    }
-
-
-    if(
-
-        !rateMatch(property)
-
-    ){
-
-        return false;
-
-    }
-
-
-    if(
-
-        !roadWidthMatch(property)
-
-    ){
-
-        return false;
-
-    }
-
-
-    if(
-
-        !frontageMatch(property)
-
-    ){
-
-        return false;
-
-    }
-
-
-    if(
-
-        !exclusiveMatch(property)
-
-    ){
-
-        return false;
-
-    }
-
-
-    return true;
 
 }
 
