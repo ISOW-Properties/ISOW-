@@ -1180,7 +1180,8 @@ function resetAll(){
 
     if(search)
         search.value = "";
-
+if(state)
+    state.value = "";
     if(district)
         district.value = "";
 
