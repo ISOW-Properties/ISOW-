@@ -1226,6 +1226,7 @@ if(state)
 
 [
     search,
+    state,
     district,
     city,
     landType,
