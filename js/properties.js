@@ -165,7 +165,64 @@ function populateSelect(
     });
 
 }
+function districtsForSelectedState(){
 
+    const selectedState =
+        state
+        ? state.value
+        : "";
+
+    return [
+
+        ...new Set(
+
+            properties
+
+            .filter(property => {
+
+                if(!selectedState)
+                    return true;
+
+                return normalize(property.state) === normalize(selectedState);
+
+            })
+
+            .map(property => property.district)
+
+            .filter(Boolean)
+
+        )
+
+    ].sort();
+
+}
+
+
+function refreshDistrictFilter(){
+
+    if(!district)
+        return;
+
+    const currentDistrict =
+        district.value;
+
+    populateSelect(
+        district,
+        districtsForSelectedState(),
+        "All Districts"
+    );
+
+    const districtStillExists =
+        [...district.options].some(
+            option => option.value === currentDistrict
+        );
+
+    district.value =
+        districtStillExists
+        ? currentDistrict
+        : "";
+
+}
 
 /* ==========================================================
    INITIALISE FILTERS
