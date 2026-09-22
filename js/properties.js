@@ -56,6 +56,8 @@ document.getElementById("noResults");
 
 const search =
 document.getElementById("search");
+   const state =
+document.getElementById("stateFilter");
 
 const district =
 document.getElementById("districtFilter");
