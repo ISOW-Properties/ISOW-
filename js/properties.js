@@ -1231,9 +1231,39 @@ function resetAll(){
 /* ==========================================================
    EVENTS
 ========================================================== */
+if(state){
 
+    state.addEventListener(
+        "change",
+        function(){
+            refreshDistrictFilter();
+            update();
+        }
+    );
 
+}
 
+[
+    search,
+    district,
+    sort
+]
+.forEach(element => {
+
+    if(!element)
+        return;
+
+    element.addEventListener(
+        "input",
+        update
+    );
+
+    element.addEventListener(
+        "change",
+        update
+    );
+
+});
 
 /* ==========================================================
    RESET BUTTON
